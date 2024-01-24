@@ -97,7 +97,7 @@ class MarcaCelularController extends Controller
             return response()->json(['message' => 'Marca de celular eliminada exitosamente']);
     
         } catch (Exception $e) {
-            return response()->json(['error' => 'Error al eliminar la marca de celular'], 500);
+            return response()->json(['error' => 'Error al eliminar la marca de celular por favor intento de nuevo'], 500);
         }
     }   
 }
