@@ -3,12 +3,14 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MarcaCelularController;
-
+use App\Http\Controllers\CelularController;
 
 
 
 Route::get('/marcas-celulares', [MarcaCelularController::class, 'index']);
 Route::post('/marcas-celulares', [MarcaCelularController::class, 'store']);
+Route::get('/celulares', [CelularController::class, 'index']);
+Route::post('/celulares', [CelularController::class, 'store']);
 
 /*
 |--------------------------------------------------------------------------
